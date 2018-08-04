@@ -25,7 +25,12 @@
   },
   "standard": {
     "env": [
-      "jest"
+      "jest", "enzyme"
+    ],
+    "globals": [
+      "shallow",
+      "render",
+      "mount"
     ]
   }
 }
