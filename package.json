@@ -11,6 +11,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "standard src/**/*.js",
+    "lint-fix": "standard --fix src/**/*.js"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "prop-types": "^15.6.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   }
 }
