@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component should render avatar image 1`] = `
+<img
+  className="message-avatar"
+  src="avatar.jpg"
+/>
+`;
