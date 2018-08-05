@@ -10,7 +10,7 @@ const MessageCounter = ({ counter }) => (
       <IconChat title='Chat bubles' />
       <span className='message-counter-text'>{counter} Online Requests</span>
     </div>
-    <div className='message-counter-group'>
+    <div className='message-counter-group message-counter-group--offline'>
       <IconMail title='Envelope' />
       <span className='message-counter-text'>{counter} Offline Requests</span>
     </div>

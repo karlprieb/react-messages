@@ -18,7 +18,7 @@ exports[`MessageCounter component should render app header with counter 1`] = `
     </span>
   </div>
   <div
-    className="message-counter-group"
+    className="message-counter-group message-counter-group--offline"
   >
     <IconMail
       title="Envelope"

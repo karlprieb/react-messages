@@ -4,6 +4,7 @@ exports[`App component should render all chat application 1`] = `
 <main
   className="main-wrapper"
 >
+  <Connect(MessageCounter) />
   <Connect(MessageList) />
   <Connect(MessageField) />
 </main>
