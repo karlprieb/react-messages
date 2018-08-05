@@ -1,5 +1,8 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import { IconSend } from '../icons'
+
+import './messageField.css'
 
 class MessageField extends PureComponent {
   constructor (props) {
@@ -27,12 +30,14 @@ class MessageField extends PureComponent {
 
   render () {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <textarea value={this.state.value} onChange={this.handleChange} />
-          <button type='submit'>Send</button>
+      <React.Fragment>
+        <form className='message-form' onSubmit={this.handleSubmit}>
+          <textarea className='message-textarea' value={this.state.value} onChange={this.handleChange} />
+          <button className='message-send-button' type='submit'>
+            <IconSend title='Send' />
+          </button>
         </form>
-      </div>
+      </React.Fragment>
     )
   }
 }

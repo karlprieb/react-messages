@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render all chat application 1`] = `
-<div>
+<main
+  className="main-wrapper"
+>
   <Connect(MessageList) />
   <Connect(MessageField) />
-</div>
+</main>
 `;

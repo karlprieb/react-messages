@@ -1,19 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Message textarea shoud render without error 1`] = `
-<div>
+<React.Fragment>
   <form
+    className="message-form"
     onSubmit={[Function]}
   >
     <textarea
+      className="message-textarea"
       onChange={[Function]}
       value=""
     />
     <button
+      className="message-send-button"
       type="submit"
     >
-      Send
+      <IconSend
+        title="Send"
+      />
     </button>
   </form>
-</div>
+</React.Fragment>
 `;
