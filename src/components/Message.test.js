@@ -12,7 +12,7 @@ describe('Message component', () => {
   it('should render a message of theirs', () => {
     const wrapper = shallow(<Message text='Another message just for test' owner='theirs' />)
     expect(wrapper.find('.message').hasClass('message--theirs')).toEqual(true)
-    expect(wrapper.text()).toEqual('Another message just for test')
+    expect(wrapper.text()).toEqual('<Avatar />Another message just for test')
     expect(wrapper).toMatchSnapshot()
   })
 })
