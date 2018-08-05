@@ -4,7 +4,6 @@ import Message from './Message'
 
 const MessageList = ({ messages }) => {
   const messageCount = messages.length
-  console.log(messageCount)
   const allMessages = messages.map(message =>
     <Message
       key={message.id}

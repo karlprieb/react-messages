@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message component should render a message of theirs 1`] = `
+<li
+  className="message message--theirs"
+>
+  Another message just for test
+</li>
+`;
+
+exports[`Message component should render a message of yours 1`] = `
+<li
+  className="message message--yours"
+>
+  Some message
+</li>
+`;
