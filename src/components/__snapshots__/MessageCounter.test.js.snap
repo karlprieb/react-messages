@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageCounter component should render app header with counter 1`] = `
+<header
+  className="message-counter"
+>
+  <div
+    className="message-counter-group"
+  >
+    <IconChat
+      title="Chat bubles"
+    />
+    <span
+      className="message-counter-text"
+    >
+      10
+       Online Requests
+    </span>
+  </div>
+  <div
+    className="message-counter-group"
+  >
+    <IconMail
+      title="Envelope"
+    />
+    <span
+      className="message-counter-text"
+    >
+      10
+       Offline Requests
+    </span>
+  </div>
+</header>
+`;
