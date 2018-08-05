@@ -1,21 +1,39 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Message from './Message'
 
-const MessageList = ({ messages }) => {
-  const messageCount = messages.length
-  const allMessages = messages.map(message =>
-    <Message
-      key={message.id}
-      {...message}
-    />
-  )
+import './messageList.css'
 
-  return (
-    <ul>
-      {allMessages}
-    </ul>
-  )
+class MessageList extends PureComponent {
+  componentDidMount () {
+    this.scrollToBottom()
+  }
+
+  componentDidUpdate () {
+    this.scrollToBottom()
+  }
+
+  scrollToBottom () {
+    const element = this.el
+    element.scrollTo(0, element.scrollHeight)
+  }
+
+  get allMessages () {
+    return this.props.messages.map(message =>
+      <Message
+        key={message.id}
+        {...message}
+      />
+    )
+  }
+
+  render () {
+    return (
+      <ul className='message-list' ref={el => { this.el = el }}>
+        {this.allMessages}
+      </ul>
+    )
+  }
 }
 
 MessageList.propTypes = {
